@@ -1,17 +1,25 @@
 <!doctype html>
-<style type="text/css">
-	#mainPopup {
-		padding: 10px;
-		height: 200px;
-		width: 400px;
-		font-family: Helvetica, Ubuntu, Arial, sans-serif;
-	}
-	h1 {
-		font-size: 2em;
-	}
-</style>
-
-<div id="mainPopup">
-<h1>Hello extensionizr!</h1>
-<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/page_action/page_action.html. The CSS is there, too.</p>
-</div>
+<html>
+    <head>
+        <title>Send to Mom</title>
+        <link rel="stylesheet" type="text/css" href="/css/pure-min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javascript" src="js/viewmodel.js"></script>
+    </head>
+    <body>
+        <form class='pure-form pure-form-stacked' id='send-form'>
+            <fieldset>
+                <legend>Share this page</legend>
+                <div>
+                    <label for='to'>To:</label>
+                    <input type='email' id='to' class='pure-input-1'>
+                </div>
+                <div>
+                    <label for='body'>Comment:</label>
+                    <textarea id='body' class='pure-input-1'></textarea> 
+                </div>
+            </fieldset>
+            <button type='submit' class='pure-button pure-button-primary'>Send</button>
+        </form>
+    </body>
+</html>
