@@ -16,6 +16,7 @@
     "default_popup": "src/popup/popup.html"
   },
   "permissions": [
-    "tabs"
+    "tabs",
+    "https://api.postmarkapp.com/email"
   ]
 }
