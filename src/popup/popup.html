@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="/css/pure-min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src='/js/jquery-validation/jquery.validate.min.js'></script>
         <script type="text/javascript" src="js/magic.js"></script>
     </head>
     <body>
@@ -13,11 +14,11 @@
                 <legend>Share this page</legend>
                 <div>
                     <label for='to'>To:</label>
-                    <input type='email' id='to' class='pure-input-1'>
+                    <input type='email' id='to' class='pure-input-1' required>
                 </div>
                 <div>
                     <label for='from'>From:</label>
-                    <input type='email' id='from' class='pure-input-1'>
+                    <input type='email' id='from' class='pure-input-1' required>
                 </div>
                 <div>
                     <label for='comment'>Comment:</label>

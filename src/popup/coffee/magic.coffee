@@ -1,5 +1,6 @@
 $ ->
 	console.log 'DOM ready' 
+	$('#send-form').validate()	
 	$('form').submit (event) ->
 		console.log 'Submitting form...'
 		to = $('#to').val()

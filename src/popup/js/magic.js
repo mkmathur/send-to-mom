@@ -2,6 +2,7 @@
 (function() {
   $(function() {
     console.log('DOM ready');
+    $('#send-form').validate();
     return $('form').submit(function(event) {
       var JSONdata, comment, data, from, to;
       console.log('Submitting form...');
