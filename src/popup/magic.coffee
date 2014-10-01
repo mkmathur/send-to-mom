@@ -1,3 +1,9 @@
+chrome.tabs.getSelected (tab) ->
+	url = new URI tab.url
+	console.log tab.url
+	console.log tab.title
+	console.log url.domain()
+
 $ ->
 	console.log 'DOM ready' 
 	$('#send-form').validate()	
